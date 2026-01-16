@@ -119,8 +119,10 @@ const server = http.createServer((req, res) => {
           });
         }
         if (data.resetRound === true) {
-          state.assignments = {};
           state.roundStartedAt = Date.now();
+          if (data.clearAssignments === true) {
+            state.assignments = {};
+          }
         }
         if (Number.isFinite(data.roundStartedAt)) {
           state.roundStartedAt = data.roundStartedAt;
