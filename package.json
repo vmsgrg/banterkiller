@@ -1,0 +1,12 @@
+{
+    "name": "team-server",
+    "version": "1.0.0",
+    "main": "team-server.js",
+    "type": "commonjs",
+    "scripts": {
+      "start": "node team-server.js"
+    },
+    "engines": {
+      "node": "18.x"
+    }
+  }
